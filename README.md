@@ -7,7 +7,7 @@ execution.
 
 Simple:
 
-    $ docker run -it --rm -v $(pwd)/results:/data -e PATTERN="^mysite" exos/shallot
+    $ docker run -it --rm -v $(pwd)/results:/data -e PATTERN="^mysite" exoslpm/shallot
 
 This will to generate files in `./results` with the format
 `{timestamp}.{nanoseconds}` with the onion and private key.
@@ -28,7 +28,7 @@ Number of CPU's/cores to use, by default use all.
 Output pattern, use a command like `/data/\$(date +%s)`, by default use
 `/data/\$(date +%s.%N)`.
 
-You can used `/std/out` too.
+You can used `/dev/stdout` too.
 
 ### EXTRA_PARAMS
 
